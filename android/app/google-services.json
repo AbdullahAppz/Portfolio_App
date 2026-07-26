@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945052703909",
+    "project_id": "codiora",
+    "storage_bucket": "codiora.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945052703909:android:566705ab8ff45a24b3414c",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_bBBigEvWTX2IuzegHLCSgx8zCOm3ofo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
