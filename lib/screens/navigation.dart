@@ -23,13 +23,6 @@ class _MainNavigationState
 
   int currentIndex = 0;
 
-  final List<Widget> screens = const [
-    HomeScreen(),
-    ProfileScreen(),
-    ProjectsScreen(),
-    ContactScreen(),
-  ];
-
   Future<void> logout() async {
     final confirm = await LogoutDialog.show(context);
 
@@ -50,6 +43,18 @@ class _MainNavigationState
 
   @override
   Widget build(BuildContext context) {
+    final screens = [
+      HomeScreen(
+        onNavigate: (index) {
+          setState(() {
+            currentIndex = index;
+          });
+        },
+      ),
+      const ProfileScreen(),
+      const ProjectsScreen(),
+      const ContactScreen(),
+    ];
     return Scaffold(
       appBar: AppBar(
         title: const Text("Portfolio"),

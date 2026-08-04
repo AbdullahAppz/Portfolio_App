@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  final Function(int)? onNavigate;
+
+  const HomeScreen({
+    super.key,
+    this.onNavigate,
+  });
 
   Widget statCard(
       IconData icon,
@@ -73,26 +78,30 @@ class HomeScreen extends StatelessWidget {
       IconData icon,
       String text,
       Color color,
+      VoidCallback onTap,
       ) {
     return Expanded(
-      child: Card(
-        elevation: 3,
-        child: Padding(
-          padding:
-          const EdgeInsets.symmetric(vertical: 18),
-          child: Column(
-            children: [
-              CircleAvatar(
-                radius: 28,
-                backgroundColor: color,
-                child: Icon(
-                  icon,
-                  color: Colors.white,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: onTap,
+        child: Card(
+          elevation: 3,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 18),
+            child: Column(
+              children: [
+                CircleAvatar(
+                  radius: 28,
+                  backgroundColor: color,
+                  child: Icon(
+                    icon,
+                    color: Colors.white,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Text(text),
-            ],
+                const SizedBox(height: 10),
+                Text(text),
+              ],
+            ),
           ),
         ),
       ),
@@ -152,8 +161,7 @@ class HomeScreen extends StatelessWidget {
                       CrossAxisAlignment.start,
                       children: [
 
-                        Text(
-                          "Abdullah",
+                        Text("Abdullah",
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight:
@@ -163,8 +171,7 @@ class HomeScreen extends StatelessWidget {
 
                         SizedBox(height: 6),
 
-                        Text(
-                          "Flutter Developer",
+                        Text("Flutter Developer",
                         ),
 
                         SizedBox(height: 6),
@@ -272,41 +279,43 @@ class HomeScreen extends StatelessWidget {
 
           Row(
             children: [
-
               quickButton(
                 Icons.person,
                 "Profile",
                 Colors.green,
+                    () => onNavigate?.call(1),
               ),
-
               const SizedBox(width: 10),
-
               quickButton(
                 Icons.work,
                 "Projects",
                 Colors.blue,
+                    () => onNavigate?.call(2),
               ),
-
             ],
           ),
-
           const SizedBox(height: 10),
-
           Row(
             children: [
-
               quickButton(
                 Icons.contact_mail,
                 "Contact",
                 Colors.orange,
+                    () => onNavigate?.call(3),
               ),
-
               const SizedBox(width: 10),
 
               quickButton(
                 Icons.settings,
                 "Settings",
                 Colors.purple,
+                    () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Settings screen coming soon."),
+                    ),
+                  );
+                },
               ),
 
             ],

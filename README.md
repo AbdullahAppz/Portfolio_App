@@ -5,7 +5,6 @@ A modern and responsive Portfolio Mobile Application developed using **Flutter**
 ---
 
 ## 📌 Project Overview
-
 The Professional Portfolio Mobile Application was developed as the final project for the **Codiora 8-Week Mobile App Development Internship**.
 
 The application demonstrates modern mobile development practices including Firebase integration, state management, responsive UI design, offline caching, dark mode, search functionality, and professional user experience.
@@ -69,8 +68,7 @@ The application demonstrates modern mobile development practices including Fireb
 
 ---
 
-# 📷 Application Screens
-
+## 📷 Application Screens
 - Splash Screen
 - Login Screen
 - Home Screen
@@ -83,30 +81,14 @@ The application demonstrates modern mobile development practices including Fireb
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
-## Frontend
+**Frontend:** Flutter, Dart, Material Design 3  
+**Backend:** Firebase Authentication, Cloud Firestore  
+**State Management:** Riverpod  
+**Local Storage:** Hive, Shared Preferences
 
-- Flutter
-- Dart
-- Material Design 3
-
-## Backend
-
-- Firebase Authentication
-- Cloud Firestore
-
-## State Management
-
-- Riverpod
-
-## Local Storage
-
-- Hive
-- Shared Preferences
-
-## Additional Packages
-
+**Additional Packages:**
 - Cached Network Image
 - URL Launcher
 - Image Picker
@@ -116,9 +98,8 @@ The application demonstrates modern mobile development practices including Fireb
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 lib/
-│
 ├── models/
 ├── providers/
 ├── services/
@@ -128,13 +109,10 @@ lib/
 ├── firebase_options.dart
 └── main.dart
 
----
-
 
 ---
 
-# 📦 Dependencies
-
+## 📦 Dependencies
 - firebase_core
 - firebase_auth
 - cloud_firestore
@@ -151,69 +129,34 @@ lib/
 
 ---
 
-# 🚀 Installation
-
-### 1 Clone Repository
-
-### 2 Move to Project
-
-### 3 Install Packages
-
-### 4 Configure Firebase
-
-- Create a Firebase Project
-- Enable Authentication
-- Create Firestore Database
-- Add Android Application
-- Download `google-services.json`
-- Run:
-
-### 5 Run Application
+## 🚀 Installation
+1. Clone Repository
+2. Move to Project
+3. Install Packages
+4. Configure Firebase
+    - Create a Firebase Project
+    - Enable Authentication
+    - Create Firestore Database
+    - Add Android Application
+    - Download `google-services.json`
+5. Run Application
 
 ---
 
-# 📁 Firestore Collections
+## 📁 Firestore Collections
 
-### profile
+**profile**
+- Name, Role, Email, Phone, Image, Skills
 
-Contains:
+**projects**
+- Project Name, Description, Category, Technologies, Image, GitHub / Live Link
 
-- Name
-- Role
-- Email
-- Phone
-- Image
-- Skills
+**contact**
+- Email, Phone, GitHub, LinkedIn, Portfolio
 
 ---
 
-### projects
-
-Contains:
-
-- Project Name
-- Description
-- Category
-- Technologies
-- Image
-- GitHub / Live Link
-
----
-
-### contact
-
-Contains:
-
-- Email
-- Phone
-- GitHub
-- LinkedIn
-- Portfolio
-
----
-
-# 📈 Performance Improvements
-
+## 📈 Performance Improvements
 - Cached Firebase Data using Hive
 - Cached Images
 - Optimized Navigation
@@ -225,10 +168,8 @@ Contains:
 
 ---
 
-# 🧪 Testing
-
+## 🧪 Testing
 The application was tested for:
-
 - Authentication
 - Navigation
 - Firebase Connectivity
@@ -242,79 +183,19 @@ The application was tested for:
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots here:
-
-- Splash Screen
-- Login
-- Home
-- Profile
-- Edit Profile
-- Projects
-- Project Details
-- Contact
-- Dark Mode
-- Firebase Firestore
-- Authentication
-- APK Running on Android
+## 📚 Internship Progress
+- **Week 1:** Planning, UI Design, Authentication Layout
+- **Week 2:** Navigation, Home, Profile, Contact
+- **Week 3:** Dashboard, Theme, State Management
+- **Week 4:** CRUD Operations
+- **Week 5:** Search & Filter, UI Improvements
+- **Week 6:** Firebase Integration, Hive Offline Cache
+- **Week 7:** Testing, Optimization, Error Handling
+- **Week 8:** Final UI Polish, Firebase Authentication, Firestore Integration, Release APK, GitHub Deployment, Documentation
 
 ---
 
-# 📦 Release Build
-
-Android APK generated successfully using:
-
----
-
-# 📚 Internship Progress
-
-### Week 1
-- Portfolio App Planning
-- UI Design
-- Authentication Layout
-
-### Week 2
-- Navigation
-- Home
-- Profile
-- Contact
-
-### Week 3
-- Dashboard
-- Theme
-- State Management
-
-### Week 4
-- CRUD Operations
-
-### Week 5
-- Search & Filter
-- UI Improvements
-
-### Week 6
-- Firebase Integration
-- Hive Offline Cache
-
-### Week 7
-- Testing
-- Optimization
-- Error Handling
-
-### Week 8
-- Final UI Polish
-- Firebase Authentication
-- Firestore Integration
-- Release APK
-- GitHub Deployment
-- Documentation
-
----
-
-# 🎯 Learning Outcomes
-
-During this project I gained practical experience in:
-
+## 🎯 Learning Outcomes
 - Flutter Development
 - Firebase Authentication
 - Cloud Firestore
@@ -329,20 +210,14 @@ During this project I gained practical experience in:
 
 ---
 
-# 👨‍💻 Developer
-
-**Abdullah**
-
+## 👨‍💻 Developer
+**Abdullah**  
 Flutter Developer
 
-GitHub:
-https://github.com/AbdullahAppz
-
-Project Repository:
-https://github.com/AbdullahAppz/Portfolio_App
+GitHub: [AbdullahAppz](https://github.com/AbdullahAppz)  
+Project Repository: [Portfolio_App](https://github.com/AbdullahAppz/Portfolio_App)
 
 ---
 
-# 📄 License
-
+## 📄 License
 This project was developed for educational and internship purposes under the **Codiora Mobile App Development Internship Program**.
